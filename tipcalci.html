@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="outercontainer">
+    
+   <div class="container1">Bill amount</div>
+   <div id="first">
+   <span >$</span>
+   <input type="number" onkeyup="calculatebill()" id="billtotal" class="bt">
+</div>
+
+
+   <div class="container2">Tip amount</div>
+   <div class="second">
+   <span class="percent">%</span>
+   <input type="number"id="tipamount" class="ta" onkeyup="calculatebill()" > 
+</div> 
+
+<div class="container" id="bottom">
+<div id ="third">
+  <span class="spancont"><button class="buttcont" onclick="decreasepeople()"><span class="btext">-</button></span></span>
+  <span class="split amount" id="noofpeople">1</span> 
+  <span class="spancont"><button class="buttcont" onclick="increasepeople()">+
+    </button>
+  </span>
+</div>
+<div id="fourth">
+    <div class="title">Total amount per person </div>
+        <div class="total" id="perpersntotal">$0.00</div>
+    
+   
+
+    </div>
+</div>
+</div>
+<script src="sc.js"></script>
+</body>
+</html>
